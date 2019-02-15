@@ -1,0 +1,161 @@
+#body{
+    background-color: cadetblue;
+
+}
+
+#registration div{
+    box-shadow:3px 3px 3px 3px lightgrey;
+    top:250px;
+    background-color: white;
+    box-shadow:0 10px 10px -2px black;
+    
+}
+#head h1{
+    color:white;
+    font-size: 300%;
+    position:absolute;
+    top:140px;
+
+    font-family: 'Anton', sans-serif;
+
+    font-family: 'Concert One', cursive;
+
+    font-family: 'Staatliches', cursive;
+
+    letter-spacing: 2px;
+
+}
+#nav{
+    position:absolute;
+    top:300px;
+    background-color: white;
+    box-shadow:0 10px 10px -2px black;
+    padding:40px;
+
+
+}
+.new{
+    background-color:cadetblue; 
+}
+#header h4{
+    color: white;
+    font-size: 250%;
+    font-family: 'Staatliches', cursive;
+    position: absolute;
+    top:220px;
+   
+    
+}
+#nave{
+    position:absolute;
+    top:300px;
+    background-color: white;
+    box-shadow:0 10px 10px -2px black;
+    padding:40px;
+    
+
+}
+.new{
+    background-color:cadetblue; 
+}
+#look h4{
+    color: white;
+    font-size: 300%;
+    font-family: 'Staatliches', cursive;
+    position: absolute;
+    top:220px;
+}
+.one{
+    background-color: cadetblue;
+}
+#greek{
+    position:absolute;
+    top:230px;
+    background-color: white;
+    box-shadow:0 10px 10px -2px black;
+    padding:40px;
+
+}
+#greek a{
+    outline: none;
+    table-layout: auto;
+    border: none;
+}
+#greek tr{
+    width:100px;
+}
+#div.greek input[type="text"]{
+    width:100%;
+}
+.rate{
+    background-color: cadetblue;
+}
+#marks{
+    background-color: white;
+    position: relative;
+    top:250px;
+}
+.rate p{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Oswald', sans-serif;
+}
+.show{
+    background-color: cadetblue;
+    position:relative;
+    top:250px;
+    box-shadow:0 10px 10px -2px black;
+
+}
+#student{
+    background-color: white;
+    box-shadow:0 10px 10px -2px black;
+}
+#student tr{
+    width:100%;
+    
+
+}
+#std input{
+    position: relative;
+    top:400px;
+    
+
+}
+#std a{
+    font-size:300%;
+    color:black;
+    position: relative;
+    top:150px;
+    box-shadow:0 10px 10px -2px black;
+    background-color: white;
+    padding:2rem;
+    border: 3px solid black;
+}
+#student tr td h2{
+    font-size: 200%;
+}
+#tab{
+    position:absolute;
+    background-color:white;
+    top:300px;
+    padding:20px;
+    box-shadow:0 10px 10px -2px black;
+
+}
+.let{
+    background-color: cadetblue;
+    box-shadow:0 10px 10px -2px black;
+}
+.fresh{
+    background-color: cadetblue;
+}
+#another{
+    background-color: white;
+    position:absolute;
+    top:300px;
+    box-shadow:0 10px 10px -2px black;
+}
+#another h1{
+    font-family: 'Dosis', sans-serif;
+}
