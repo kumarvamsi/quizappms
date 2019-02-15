@@ -8,6 +8,7 @@
     top:250px;
     background-color: white;
     box-shadow:0 10px 10px -2px black;
+    border-color: blue;
     
 }
 #head h1{
@@ -52,6 +53,7 @@
     background-color: white;
     box-shadow:0 10px 10px -2px black;
     padding:40px;
+    border-color: red: 
     
 
 }
@@ -62,9 +64,25 @@
     color: white;
     font-size: 300%;
     font-family: 'Staatliches', cursive;
-    position: absolute;
-    top:220px;
+
+    margin-top:23rem;
+    
 }
+
+
+@media only screen and (min-width: 600px) {
+  #look h4 {
+    margin-left:-3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #look h4 {
+    margin-left:3rem;
+  }
+}
+
+
 .one{
     background-color: cadetblue;
 }
