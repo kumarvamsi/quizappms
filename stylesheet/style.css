@@ -8,7 +8,8 @@
     top:250px;
     background-color: white;
     box-shadow:0 10px 10px -2px black;
-    border-color: blue;
+    border: 3px solid black;
+   
     
 }
 #head h1{
@@ -24,7 +25,7 @@
     font-family: 'Staatliches', cursive;
 
     letter-spacing: 2px;
-
+   
 }
 #nav{
     position:absolute;
@@ -32,6 +33,7 @@
     background-color: white;
     box-shadow:0 10px 10px -2px black;
     padding:40px;
+    border: 3px solid black;
 
 
 }
@@ -53,7 +55,8 @@
     background-color: white;
     box-shadow:0 10px 10px -2px black;
     padding:40px;
-    border-color: red: 
+    
+    border: 3px solid black;
     
 
 }
@@ -92,6 +95,7 @@
     background-color: white;
     box-shadow:0 10px 10px -2px black;
     padding:40px;
+    border: 3px solid black;
 
 }
 #greek a{
@@ -112,6 +116,8 @@
     background-color: white;
     position: relative;
     top:250px;
+    border: 3px solid black;
+
 }
 .rate p{
     text-align: center;
@@ -128,6 +134,8 @@
 #student{
     background-color: white;
     box-shadow:0 10px 10px -2px black;
+    border: 3px solid black;
+
 }
 #student tr{
     width:100%;
@@ -159,6 +167,7 @@
     top:300px;
     padding:20px;
     box-shadow:0 10px 10px -2px black;
+    border:3px solid black;
 
 }
 .let{
@@ -173,7 +182,12 @@
     position:absolute;
     top:300px;
     box-shadow:0 10px 10px -2px black;
+    border:3px solid black;
 }
 #another h1{
     font-family: 'Dosis', sans-serif;
 }
+#greek  tr input[type="text"],[placeholder=""]{
+    color:;
+    font-size: 130%;
+} 
