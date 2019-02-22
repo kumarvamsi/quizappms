@@ -9,7 +9,16 @@
     background-color: white;
     box-shadow:0 10px 10px -2px black;
     border: 3px solid black;
-   
+    
+}
+#registration tr td input[placeholder]{
+
+    background: transparent;
+    
+   outline: none; 
+   border: none;
+    border-bottom:2px solid black;
+    
     
 }
 #head h1{
