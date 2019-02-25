@@ -17,8 +17,11 @@
     <title>QUIZ</title>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" /> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="js/app.js"></script>
 </head>
-<body class="one">
+<body class="one" ng-app="myApp" ng-controller="quizcontroller">
         <div class="col-md-offset-4 col-md-4 animated fadeInDown"  id="greek">
 <table class="table">
     <form>
@@ -26,29 +29,29 @@
        
         
         <tr>
-            <td><input type="text"placeholder="1.Enter Your Question?" class="form-control"></td>
+            <td><input type="text"placeholder="1.Enter Your Question?" class="form-control" ng-model="question"></td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
-                <td><input type="text"placeholder="First Option" class="form-control"></td>
+                <td><input type="text"placeholder="First Option" class="form-control" ng-model="first"></td>
             </tr>
             <tr>
-                    <td><input type="text"placeholder="Second Option" class="form-control"></td>
+                    <td><input type="text"placeholder="Second Option" class="form-control" ng-model="second"></td>
                 </tr>
                 <tr>
-                        <td><input type="text"placeholder="Third Option" class="form-control"></td>
+                        <td><input type="text"placeholder="Third Option" class="form-control" ng-model="third"></td>
                     </tr>
                     <tr>
-                            <td><input type="text"placeholder="Fourth Option" class="form-control"></td>
+                            <td><input type="text"placeholder="Fourth Option" class="form-control" ng-model="fourth"></td>
                        
                             
                     </tr>
                   
                     
                         <td>  <a href="#" class="btn btn-s  "></a></td>
-                        <td>  <a href="#" class="btn btn-success btn-block">SUBMIT</a></td>
+                        <td>  <a href="#" class="btn btn-success btn-block" ng-click="submit()">SUBMIT</a></td>
                      
                 </tr>
                 

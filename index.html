@@ -14,16 +14,22 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
-<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Anton|Staatliches" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Anton|Concert+One|Staatliches" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Anton|Concert+One|Staatliches" rel="stylesheet"> 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="js/app.js"></script>
+
 </head>
-<body id="body">
+<body id="body" ng-app="myApp" ng-controller="registerController">
    
-    <div id="head"  >
-        <h1 class="col-md-offset-5">Register Here</h1>
+
+
+
+    <div id="head">
+        <h1 class="col-md-offset-5" >Register Here </h1>
     </div>
 
 
@@ -39,37 +45,37 @@
         <tr>
             <td>Enter Username</td>
             <td>
-                <input type="text" name="" id="" class="form-control" placeholder="Enter Username">
+                <input type="text" name="" id="" class="form-control" placeholder="Enter Username" ng-model="username">
             </td>
     </tr>
     <tr>
         <td>Enter Email</td>
         <td>
-        <input type="email" name="" id="" class="form-control" placeholder="Enter Email">
+        <input type="email" name="" id="" class="form-control" placeholder="Enter Email" ng-model="email">
     </td>
     <tr>
         <td>Enter phone number</td>
         <td>
-            <input type="email" name="" class="form-control" placeholder="Enter Phone Number">
+            <input type="phone" name="" class="form-control" placeholder="Enter Phone Number" ng-model="phone">
         </td>
     </tr>
     </tr>
     <tr>
         <td>Enter Password</td>
         <td>
-        <input type="password" name="" id="" class="form-control" placeholder="Enter Password">
+        <input type="password" name="" id="" class="form-control" placeholder="Enter Password" ng-model="password">
     </td>
     </tr>
     <tr>
         <td>Confirm Password</td>
         <td>
-        <input type="password" name="" id="" class="form-control" placeholder="Confirm Password">
+        <input type="password" name="" id="" class="form-control" placeholder="Confirm Password" ng-model="confirm">
     </td>
     </tr>
     <tr> 
         <td></td>
         <td >   
-        <a href="#" class="btn btn-primary btn-block ">Register</a>
+        <a href="#" class="btn btn-primary btn-block " ng-click="contain()">Register</a>
     </td>
 </tr>
 </div>

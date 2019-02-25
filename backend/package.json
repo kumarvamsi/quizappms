@@ -1,11 +1,17 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "quiz web application",
+  "description": "this is backend for quiz app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "vamsikumar",
-  "license": "ISC"
+  "keywords": [
+    "quiz"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
