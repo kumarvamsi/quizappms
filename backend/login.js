@@ -10,17 +10,20 @@ app.use(function(req, res, next) {
     next();
   });
 
-app.get("/register",function(req,res){
-    res.json({"msg":"Hello"});
-
-})
-
-
-app.post("/register",bp,function(req,res){
-console.log(req.body);
-
-})
-
-
-app.listen(3000);
-console.log("server running @ 3000");
+  app.get("/login",function(req,res){
+    res.json({"msg":"somedata"});
+  
+  })
+  
+  
+  app.post("/login",bp,function(req,res){
+  console.log(req.body);
+  
+  })
+  
+  
+  app.listen(3000);
+  console.log("server  not running @ 3000");
+  
+  
+  
