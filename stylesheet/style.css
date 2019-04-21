@@ -1,3 +1,5 @@
+
+
 #body{
     background-color: cadetblue;
 
@@ -50,7 +52,8 @@
 }
 #header h4{
     color: white;
-    font-size: 250%;
+    font-size: 300%;
+    letter-spacing: 1px;
     font-family: 'Staatliches', cursive;
     position: absolute;
     top:220px;
@@ -110,6 +113,11 @@
     outline: none;
     table-layout: auto;
     border: none;
+}
+#greek tr select {
+    color:red;
+    font-size: 20px;
+    width:40%;
 }
 #greek tr{
     width:100px;
@@ -199,3 +207,196 @@
     color:;
     font-size: 130%;
 } 
+#chartcontainer{
+background-color: aqua;
+background: 2px solid balck;
+
+}
+.body{
+    background-color:cadetblue;
+}
+#chartcontainer{
+    font-style: inherit;
+}
+#body{
+    height: 100%;
+}
+
+  
+.parallax{
+    background-repeat: no-repeat;
+    background-size:cover !important;
+    background-attachment: fixed;
+    height: 1000px;
+    background-position: center;
+    
+
+}
+
+#home3{
+    background-image: url('../images/sea\ mountain.webp');
+    min-block-size: 400px
+    
+}
+
+#home2{
+    background-image: url('../images/book\ light.webp ');
+    
+}
+#home{
+    background-image: url('../images/men.webp');
+     
+   }
+#button button{
+    position:absolute;
+    top:500px;
+}
+#scroll{
+    position: absolute;
+    text-align:center;
+    top:300px;
+    
+    color:black;
+    font-size: 10px;
+}
+#home h1{
+    background-color: #1c2833;
+    text-align: center;
+    height: 70px;
+    font-size:30px;
+    color: white;
+    position: absolute;
+    top: 80px;
+    padding: 20px;
+    letter-spacing: 3px;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Nunito', sans-serif;
+}
+#home3 h2{
+    background-color: cornflowerblue;
+    letter-spacing: 2;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    letter-spacing: 3px;
+    position: absolute;
+    top:300px;
+
+
+} 
+#home3 h3{
+    background-color: cornflowerblue;
+    letter-spacing: 2;
+    color: white;
+    text-align: center;
+    height: 50px;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    position: absolute;
+    top:300px;
+
+} 
+#home2 input[type="text"]{
+    position: absolute;
+    top: 400px;
+    height: 60px;
+    width: 740px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#home2 button[type="button"]{
+    position: absolute;
+    top: 400px;
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#para p{
+    background-color: #EAECEE;
+    position: absolute;
+    top:650px;
+    text-align: center;
+    font-size: 20px;
+    height: 250px;
+    padding: 80px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+#home h2{
+    background-color:#1c2833;
+    text-align: center;
+    height: 70px;
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    padding: 20px;
+    color: white;
+    letter-spacing: 4px;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Nunito', sans-serif;
+}
+#para2 p{
+    background-color: #1c2833;
+    position: absolute;
+    top: 900px;
+    color: white;
+    height: 250px;
+    font-size: 20px;
+    padding: 80px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+#home3 p{
+    background-color: #fdfeec;
+    position: absolute;
+    height: 180px;
+    top:550px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Nunito', sans-serif;
+}
+#home3 h4{
+
+    color: black;
+    position: absolute;
+    top: 880px;
+    height: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .home3, .home2, .home {
+      background-attachment: scroll;
+    }
+  } 
+  

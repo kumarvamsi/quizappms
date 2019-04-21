@@ -27,6 +27,12 @@
     <form>
         </tr>
        
+
+        <tr>
+            <td>
+                <input type="text"placeholder="Teacher name" class="form-control" ng-model="text"> 
+            </td>
+        </tr>
         
         <tr>
             <td><input type="text"placeholder="1.Enter Your Question?" class="form-control" ng-model="question"></td>
@@ -37,10 +43,10 @@
         <tr>
                 <td><input type="text"placeholder="First Option" class="form-control" ng-model="first"></td>
             </tr>
-            <tr>
+                 <tr>
                     <td><input type="text"placeholder="Second Option" class="form-control" ng-model="second"></td>
                 </tr>
-                <tr>
+                    <tr>
                         <td><input type="text"placeholder="Third Option" class="form-control" ng-model="third"></td>
                     </tr>
                     <tr>
@@ -48,18 +54,29 @@
                        
                             
                     </tr>
-                  
+                    
+                    
+                    <tr>
+                        <td class="form-control"> 
+                            
+                        CORRECT OPTION <select ng-model="answer">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4" >4</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
                     
                         <td>  <a href="#" class="btn btn-s  "></a></td>
                         <td>  <a href="#" class="btn btn-success btn-block" ng-click="submit()">SUBMIT</a></td>
+                    </tr>
+                   
                      
-                </tr>
-                
-               
-                
-           
+                            
     </form>
-</table>
+</table> 
 </div>
 
     

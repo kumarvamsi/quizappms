@@ -17,8 +17,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" /> 
 
     <title>TABLE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="js/app.js"></script>
 </head>
-<body class="let">
+<body class="let" ng-app="myApp" ng-controller="scheduleController">
     
     
     <div class="col-md-offset-2 col-md-8 animated fadeInDown col-xs-12"id="tab">
@@ -27,14 +30,16 @@
        
        <tr>
            <th>S.no</th>
-           <th>LANGUAGE</th>
+           <th>SUBJECT</th>
            <th>INSTRUCTOR</th>
+           <th>QUESTIONS</th>
            <th>APPLY</th>
        </tr>
-       <tr>
-           <td>1</td>
-           <td>JAVA</td>
-           <td>Rakesh</td>
+       <tr ng-repeat="s in schedules">
+           <td>{{$index +1}}</td>
+           <td>{{s.subject}}</td>
+           <td>{{s.instructor}}</td>
+           <td>{{s.questions}}</td>
            <td><a href="#" class="btn btn-info">CLICK</a></td>
        </tr>
       
