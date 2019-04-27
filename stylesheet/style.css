@@ -233,18 +233,21 @@ background: 2px solid balck;
 
 }
 
-#home3{
-    background-image: url('../images/sea\ mountain.webp');
+/*#home3{
+    background-image: url('../imaes/sea\ mountain.webp');
     min-block-size: 400px
     
-}
+}*/
 
 #home2{
     background-image: url('../images/book\ light.webp ');
+    text-align: center;
+    height: 1000px;
     
 }
 #home{
-    background-image: url('../images/men.webp');
+    background-image: url('../images/camera.webp');
+    
      
    }
 #button button{
@@ -274,7 +277,7 @@ background: 2px solid balck;
 
     font-family: 'Nunito', sans-serif;
 }
-#home3 h2{
+/*#home3 h2{
     background-color: cornflowerblue;
     letter-spacing: 2;
     color: white;
@@ -323,7 +326,7 @@ background: 2px solid balck;
     font-size: 30px;
     text-align: center;
     letter-spacing: 1px;
-}
+}*/
 #para p{
     background-color: #EAECEE;
     position: absolute;
@@ -366,7 +369,7 @@ background: 2px solid balck;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
-#home3 p{
+/*#home3 p{
     background-color: #fdfeec;
     position: absolute;
     height: 180px;
@@ -392,6 +395,79 @@ background: 2px solid balck;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
     font-family: 'Nunito', sans-serif;
+}*/
+.footer{
+    background-color:  #1c2833;
+    position: absolute;
+    height: 130px;
+    top:870px;
+    width: 1535px;
+    text-align: center;
+    
+}
+.footer ul{
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+.footer  a{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing:20px;
+}
+.footer p{
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+#home2 h2{
+    background-color: #1c2833;
+    position: absolute;
+    height: 90px;
+    top: 450px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 180px;
+    padding: 15px;
+}
+#home2 h3{
+    background-color: #1c2833;
+    position: absolute;
+    height: 70px;
+    top: 450px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 200px;
+    padding: 20px;
+}
+#home2 h4{
+    background-color: #1c2833;
+    position: absolute;
+    height: 90px;
+    top: 460px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 200px;
+    padding: 20px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 @media only screen and (max-device-width: 1024px) {
