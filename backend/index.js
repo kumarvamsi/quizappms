@@ -71,7 +71,8 @@ app.post("/register",bp,function(req,res){
 
 
 app.post("/login",bp,function(req,res){
-  //console.log(req.body);
+  loginmodel(req.body).save();
+  console.log(req.body);
 //find("key":"value")
     RegisterModel.find({"username":req.body.student,"password":req.body.password},function(err,data){
         if(data.length!=0){

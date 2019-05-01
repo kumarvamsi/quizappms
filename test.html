@@ -27,13 +27,20 @@
           
         <h1>ADD TEST</h1>
         <tr>
-            <td><input type="text" placeholder="ENTER SUBJECT" class="form-control" ng-model="subject"></td>
+            <td><input type="text" placeholder="ENTER SUBJECT" class="form-control" ng-model="subject" required></td>
+            <td>
+                <p style="color:red">{{subjecterror}}</p>
+            </td>
         </tr>
         <tr>
-                <td><input type="text" placeholder="ENETR NO OF QUESTIONS" class="form-control" ng-model="question"></td>
+                <td><input type="text" placeholder="ENETR NO OF QUESTIONS" class="form-control" ng-model="question" required></td>
+                <td>
+                    <p style="color:red">{{questionerror}}</p>
+                </td>
+           
             </tr>
             <tr>
-                    <td><a href="#"class="btn btn-primary " ng-click="submit()">Submit</a></td>
+                    <td><a href="quiz.html"class="btn btn-primary" ng-click="submit()">Submit</a></td>
                 </tr>
     </table>
 </div>    

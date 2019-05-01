@@ -30,28 +30,45 @@
 
         <tr>
             <td>
-                <input type="text"placeholder="Teacher name" class="form-control" ng-model="text"> 
+                <input type="text"placeholder="Teacher name" class="form-control" ng-model="name"> 
+            </td>
+            <td>
+                <p style="color:red">{{nameerror}}</p>
             </td>
         </tr>
         
         <tr>
             <td><input type="text"placeholder="1.Enter Your Question?" class="form-control" ng-model="question"></td>
+            <td>
+                <p style="color:red">{{questionerror}}</p>
+            </td>
         </tr>
         <tr>
             <td></td>
         </tr>
         <tr>
                 <td><input type="text"placeholder="First Option" class="form-control" ng-model="first"></td>
+                <td>
+                    <p style="color:red">{{firsterror}}</p>
+                </td>
             </tr>
                  <tr>
                     <td><input type="text"placeholder="Second Option" class="form-control" ng-model="second"></td>
+                    <td>
+                        <p style="color:red">{{seconderror}}</p>
+                    </td>
                 </tr>
                     <tr>
                         <td><input type="text"placeholder="Third Option" class="form-control" ng-model="third"></td>
+                        <td>
+                            <p style="color:red">{{thirderror}}</p>
+                        </td>
                     </tr>
                     <tr>
                             <td><input type="text"placeholder="Fourth Option" class="form-control" ng-model="fourth"></td>
-                       
+                            <td>
+                                <p style="color:red">{{fourtherror}}</p>
+                            </td>
                             
                     </tr>
                     
@@ -66,12 +83,16 @@
                                 <option value="4" >4</option>
                         </select>
                     </td>
+                    <td>
+                        <p style="color:red">{{answererror}}</p>
+                    </td>
                     </tr>
                     <tr>
                     
                         <td>  <a href="#" class="btn btn-s  "></a></td>
                         <td>  <a href="#" class="btn btn-success btn-block" ng-click="submit()">SUBMIT</a></td>
                     </tr>
+                   
                    
                      
                             

@@ -33,13 +33,19 @@
          
       
              <td><input type="text" class="form-control" placeholder="Enter Student Name" ng-model="student" required></td>
+             <td>
+               <p style="color:red">{{studenterror}}</p>
+             </td>
          </tr>
          <tr>
              <td><input type="password" class="form-control " placeholder="Enter  Password" ng-model="password" required></td>
+             <td>
+              <p style="color:red">{{passworderror}}</p>
+            </td>
             </tr>
             <tr>
                 <td>
-             <a  class="btn btn-info btn-block" ng-click="submit()">LOGIN</a>   
+             <a   href="test.html" class="btn btn-info btn-block" ng-click="submit()">LOGIN</a>   
             </td>   
            
             
