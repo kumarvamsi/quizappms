@@ -1,8 +1,25 @@
 let express=require('express');
 let bodyParser=require('body-parser');
 let mongoose=require('mongoose');
+//nodemailer starting
+var nodemailer=require('nodemailer');
+var transporter =nodemailer. createTransport({
+  seervice:'gmail',
+  auth:{
+    user:'raghuvarn02400@gmail.com',
+    pass:'9398219910'
 
-mongoose.connect('mongodb://admin:admin123@ds135818.mlab.com:35818/vamshi123');
+  }
+});
+var mailOptions={
+  from:'raghuvarn02400@gmail.com',
+  to:'kumarbvamsi@gmail.com',
+  subject:'raghu',
+  text:'thats it'
+};
+//nodemailer ending.
+
+mongoose.connect('mongodb://admin:admin123@ds135818.mlab.com:35818/vamshi123' ,{ useNewUrlParser: true });
 
 let RegisterSchema=new mongoose.Schema({
   "username":String,
@@ -70,8 +87,27 @@ app.post("/register",bp,function(req,res){
   })
 });
 
+let loginschema=new mongoose.Schema({
+
+});
+let loginmodel= new mongoose.model("login",loginschema);
+
 
 app.post("/login",bp,function(req,res){
+
+  //nodemailer strting.
+  transporter.sendMail(mailOptions,function(error,info){
+    if(error)
+    {
+    console.log(error);
+    }
+    else{
+    console.log('email sent:'+info.response);
+    }
+    
+    });
+
+//nodemailer ending.
   loginmodel(req.body).save();
   console.log(req.body);
 //find("key":"value")
