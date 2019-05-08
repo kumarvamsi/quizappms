@@ -205,7 +205,7 @@ app.controller("quizcontroller",function($scope,$http){
     function myfunction()
     {
 
-      document.getElementById("msg").innerHTML="question successfully added";
+      document.getElementById("msg").innerHTML="question added successfully";
     }
 
     

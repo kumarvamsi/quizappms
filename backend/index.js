@@ -18,6 +18,7 @@ let RegisterModel=new mongoose.model("user",RegisterSchema);
 let app=express();
 let bp=bodyParser.json();
 let quizschema=new mongoose.Schema({
+  "name":String,
   "question":String,
   "first":String,
   "second":String,
@@ -32,7 +33,7 @@ let testschema=new mongoose.Schema({
     
     "subject":String,
     "instructor":String,
-    "questions":Number
+    "question":Number
 })
 
 let testmodel=new mongoose.model("test",testschema);
