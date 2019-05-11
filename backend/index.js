@@ -6,18 +6,12 @@ var nodemailer=require('nodemailer');
 var transporter =nodemailer. createTransport({
   seervice:'gmail',
   auth:{
-    user:'raghuvarn02400@gmail.com',
+    user:'raghuvaran02400@gmail.com',
     pass:'9398219910'
 
   }
 });
-var mailOptions={
-  from:'raghuvarn02400@gmail.com',
-  to:'kumarbvamsi@gmail.com',
-  subject:'raghu',
-  text:'thats it'
-};
-//nodemailer ending.
+
 
 mongoose.connect('mongodb://admin:admin123@ds135818.mlab.com:35818/vamshi123' ,{ useNewUrlParser: true });
 
@@ -96,6 +90,13 @@ let loginmodel= new mongoose.model("login",loginschema);
 app.post("/login",bp,function(req,res){
 
   //nodemailer strting.
+  var mailOptions={
+    from:'raghuvaran02400@gmail.com',
+    to:'kumarbvamsi@gmail.com',
+    subject:'raghu',
+    text:'thats it'
+  };
+  
   transporter.sendMail(mailOptions,function(error,info){
     if(error)
     {
@@ -108,7 +109,10 @@ app.post("/login",bp,function(req,res){
     });
 
 //nodemailer ending.
-  loginmodel(req.body).save();
+
+
+
+   loginmodel(req.body).save();
   console.log(req.body);
 //find("key":"value")
     RegisterModel.find({"username":req.body.student,"password":req.body.password},function(err,data){

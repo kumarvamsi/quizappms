@@ -171,7 +171,7 @@ app.controller("quizcontroller",function($scope,$http){
       $http.get("http://localhost:3000/fetchQuestions").then(function(response){
           $scope.schedules=response.data;
       }).catch(function(response){
-
+          console.log(error);
       });
   });
 
